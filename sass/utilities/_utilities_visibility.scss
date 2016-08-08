@@ -1,0 +1,30 @@
+//////////////////////
+//
+// Utilities - Visibility.
+//
+//////////////////////
+
+.visually-hidden {
+  @include hide-text;
+}
+
+// This is just for Pattern Lab. For hiding text with an image, use `@include hide-text`. For more information,
+// see http://bourbon.io/docs/#hide-text.
+
+@media (max-width: 400px) {
+  .hide-small {
+    @include hide-text
+  }
+}
+
+@media (min-width: 400px) and (max-width: 900px) {
+  .hide-med {
+    @include hide-text
+  }
+}
+
+@media (min-width: 900px) {
+  .hide-large {
+    @include hide-text
+  }
+}

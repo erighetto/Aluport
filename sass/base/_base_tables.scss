@@ -1,0 +1,37 @@
+//////////////////////////////////////////
+//
+// Base - Tables.
+//
+//////////////////////////////////////////
+
+table {
+  width: 100%;
+  border: 1px solid $color-light;
+  border-spacing: 0;
+}
+
+thead th {
+  border-bottom: 1px solid $color-light;
+}
+
+tfoot th {
+  border-top: 1px solid $color-light;
+}
+
+th {
+  text-align: center;
+}
+
+th,
+td {
+  border: none;
+  @include padding(0.2em 0.5em 0.2em 0.5em);
+}
+
+.even {
+  background-color: $color-even;
+}
+
+.odd {
+  background-color: $color-odd;
+}

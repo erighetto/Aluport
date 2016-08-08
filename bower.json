@@ -1,0 +1,24 @@
+{
+  "name": "aluport",
+  "description": "A custom theme for Drupal 8 with development and performance features.",
+  "main": "",
+  "authors": [
+    "Emanuel Righetto <posta@emanuelrighetto.it>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/startinggravity/Drupal-8-Theme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "neat": "^1.8.0",
+    "normalize-scss": "normalize.scss#^5.0.3",
+    "aluport_js": "./js-src/script.js"
+  }
+}

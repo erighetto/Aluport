@@ -1,0 +1,17 @@
+//////////////////////////////////////////
+//
+// Utilities - Grid Settings.
+//
+// Reference: https://github.com/thoughtbot/neat#using-neat.
+//
+//////////////////////////////////////////
+
+// Use the grid background for development.
+$visual-grid: true !global; // To remove grid background, set to false.
+$visual-grid-color: red !global;
+$visual-grid-opacity: 0.4 !global;
+
+// Set grid setting defaults.
+$gutter: 1em;
+$grid-columns: 12;
+$max-width: 1200px;

@@ -1,0 +1,75 @@
+//////////////////////////////////////////
+//
+// Base - Inline Elements.
+//
+//////////////////////////////////////////
+
+body,
+p {
+  color: $color-black;
+  @include font-size($base-font-size);
+  @include font($fontOpenSans, $font-normal);
+}
+
+p em,
+p i,
+blockquote {
+  @include font($fontOpenSans, $font-normal-italic);
+}
+
+p strong {
+  @include font($fontOpenSans, $font-bold);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  @include font($fontOpenSans, $font-extra-bold);
+  &.visually-hidden {
+    line-height: 0;
+    @include margin(0 0 0 0);
+    @include padding(0 0 0 0);
+  }
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  @include font($fontOpenSans, $font-bold);
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    text-decoration: underline;
+  }
+}
+
+img {
+  display: block;
+}
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  background: $color-gray;
+  @include margin(1em 0 1em 0);
+  @include padding(0 0 0 0);
+}
+
+ul,
+menu,
+dir {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
