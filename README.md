@@ -2,8 +2,6 @@
 
 The files contained in this repo provide a starting point for developing a Drupal 8 theme. It is a subtheme of Classy.
 
-Consider this a work in progress. There is much that needs to be added and finished. (See the [TODO list here](https://github.com/startinggravity/Drupal-8-Theme/blob/master/TODO.md).)
-
 There are many concepts at play here to allow you to create a custom theme using tools for performance, accessibility, testing, and fast development.
 
 This repo includes:
