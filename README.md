@@ -32,6 +32,8 @@ Now install all of the Node.js modules we need. (This will take a while.)
 
 ```bash
 npm install
+bower update
+gulp build-dev
 ```
 
 
@@ -45,9 +47,7 @@ If you are adding developers on a team who are editing the theme, after they hav
 
 ```bash
 npm install
-```
-or
-```bash
+bower update
 gulp build-dev
 ```
 
@@ -56,7 +56,7 @@ gulp build-dev
 
 The development of a theme using these files and configuation would normally proceed as follows:
 
-1. **Edit Sass files to provide layout and styling.** As noted before Sass files are written once and used in Pattern Lab to largely eliminate redundant coding. The Sass files reside in your theme directory tree.
+1. **Edit Sass files to provide layout and styling.** The Sass files reside in your theme directory tree.
 
 1. **Use Gulp commands to automate the development process.** Before you beging writing files, use the command `gulp build-dev` to start up the full task-running process. Gulp will watch for file changes, process Sass files into CSS, trigger Drush to clear cache when Drupal template files are changed, and refresh the browser.
 
