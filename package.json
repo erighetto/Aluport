@@ -1,8 +1,8 @@
 {
   "name": "aluport",
   "version": "0.1.0",
-  "repository": "https://github.com/erighetto/Aluport",
-  "readme": "https://github.com/erighetto/Aluport/blob/master/README.md",
+  "repository": "https://github.com/erighetto/d8t",
+  "readme": "https://github.com/erighetto/d8t/blob/master/README.md",
   "description": "A custom theme for Drupal 8 with development and performance features.",
   "devDependencies": {
     "browser-sync": "^2.7.13",
@@ -39,6 +39,7 @@
     "gulp-watch": "^4.3.5",
     "imagemin-pngquant": "^4.1.2",
     "jshint-stylish": "^2.0.1",
+    "main-bower-files": "^2.13.1",
     "ngrok": "^0.1.99",
     "orchestrator": "^0.3.7",
     "phantomas": "^1.11.0",

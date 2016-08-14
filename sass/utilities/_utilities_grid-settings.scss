@@ -13,5 +13,5 @@ $visual-grid-opacity: 0.4 !global;
 
 // Set grid setting defaults.
 $gutter: 1em;
-$grid-columns: 12;
+$grid-columns:  12 !default;
 $max-width: 1200px;

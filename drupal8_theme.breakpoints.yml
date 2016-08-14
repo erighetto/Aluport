@@ -1,18 +1,18 @@
-aluport.mobile:
+drupal8_theme.mobile:
   label: mobile
   mediaQuery: 'all and (min-width: 0px) and (max-width: 860px)'
   weight: 1
   multipliers:
     - 1x
     - 2x
-aluport.desktop:
+drupal8_theme.desktop:
   label: desktop
   mediaQuery: 'all and (min-width: 861px) and (max-width: 1159px)'
   weight: 0
   multipliers:
     - 1x
     - 2x
-aluport.fullwidth:
+drupal8_theme.fullwidth:
   label: 'full width'
   mediaQuery: 'all and (min-width: 1160px)'
   multipliers:

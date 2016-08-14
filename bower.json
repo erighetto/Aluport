@@ -19,6 +19,6 @@
     "bourbon": "^4.2.7",
     "neat": "^1.8.0",
     "normalize-scss": "normalize.scss#^5.0.3",
-    "aluport_js": "./js-src/script.js"
+    "theme_js": "./js-src/script.js"
   }
 }
