@@ -13,27 +13,75 @@ This repo includes:
 * [Neat](http://neat.bourbon.io) for semantic grids that are designed to work with Bourbon
 * And much more theme development goodness
 
+## Pre-installation Notes
+
+The installation steps below presume you have already installed Drush, Node.js, Bower and npm on your system. Otherwise, you can skip to the installation instructions below.
 
 ## Installation Instructions
 
 We are assuming here you have already installed Drupal 8 and it is running on your development server. To begin installing this theme, navigate to the themes directory (`cd themes`). If you wish, you can add a new directory for your custom themes (`mkdir custom && cd custom`).
 
+Where you see in these instructions `your_theme` you should substitute the name of your theme, using all lower case and with no spaces. Use underscores to separate words.
+
+Now install the theme files using: 
+
+```bash
+git clone https://github.com/erighetto/d8t.git your_theme
+```
+
 Change directories to where your put your theme.
 
 ```bash
-cd aluport
+cd your_theme
 ```
+
+Rename the theme info.yml file.
+
+```bash 
+mv drupal8_theme.info.yml your_theme.info.yml
+```
+
+Edit your_theme.info.yml to reflect your theme's name and other details. Make sure you change the path under "# Locate files" to reflect your theme directory's name. See also "[Defining a theme with an .info.yml file](https://www.drupal.org/node/2349827)".
+
+Rename the .theme file.
+
+```bash
+mv drupal8_theme.theme your_theme.theme
+```
+
+Edit your_theme.theme to reflect your theme's name in the provided preprocess function. Add more conditional logic and data (pre)processing of the output here as needed.
+
+Rename the breakpoints.yml file.
+
+```bash
+mv drupal8_theme.breakpoints.yml your_theme.breakpoints.yml
+```
+
+Edit `your_theme.breakpoints.yml` by changing `drupal8_theme` to `your_theme`. This appears in three places. You should also remove, add or edit breakpoints as needed for your theme layout. At least for now, this will get you started.
+
+Rename the libraries.yml file.
+
+```bash
+mv drupal8_theme.libraries.yml your_theme.libraries.yml
+```
+
+Editing may not be needed in your_theme.libraries.yml, or at least not right away. This is where you can add other CSS and JS files. You can find more information on the use of the libraries.yml file [here] (https://www.drupal.org/developing/api/8/assets).
+
+Edit line 7 of `js-src/script.js` replacing `Drupal.behaviors.drupal8_theme with` with `Drupal.behaviors.your_theme`
 
 Edit line 1 of `gulpfile.js`, replacing `your-site.tld` with the domain of your local site.
 
-Now install all of the Node.js modules we need. (This will take a while.)
+Now install all of the Node.js modules we need and all Bower dependencies (This will take a while.)
 
 ```bash
 npm install
 bower update
-gulp build-dev
 ```
 
+Then call the Gulp task
+```bash
+gulp build-dev
+```
 
 You're now ready to visit your Drupal site and enable the new theme.
 
