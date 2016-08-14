@@ -115,3 +115,5 @@ The development of a theme using these files and configuation would normally pro
 1. **Put theme template files in `/templates`.** This directory already contains several template files, lifted directly from Classy theme. Use these or add new ones within this file structure.
 
 1. **Extra time is needed before the browser refreshes when you change template files.** When you make changes to Drupal template files or add new files, a Gulp task will clear Drupal cache and refresh the browser. Drupal requires that cached is cleared after template change, so a Drush command is added to the the watch sequence for template files. This step takes longer to run than other changes, so expect to wait at least 15 seconds before your changes are reflected in the browser. (See [this issue](https://github.com/startinggravity/Drupal-8-Theme/issues/1) for more details.)
+
+1. **Use [Bower](https://bower.io) to manage external libraries.
