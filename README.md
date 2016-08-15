@@ -67,7 +67,7 @@ mv drupal8_theme.libraries.yml your_theme.libraries.yml
 
 Editing may not be needed in your_theme.libraries.yml, or at least not right away. This is where you can add other CSS and JS files. You can find more information on the use of the libraries.yml file [here] (https://www.drupal.org/developing/api/8/assets).
 
-Edit line 7 of `js-src/script.js` replacing `Drupal.behaviors.drupal8_theme with` with `Drupal.behaviors.your_theme`
+Edit line 7 of `js-src/script.js` replacing `Drupal.behaviors.drupal8_theme` with `Drupal.behaviors.your_theme`
 
 Edit line 1 of `gulpfile.js`, replacing `your-site.tld` with the domain of your local site.
 
@@ -106,7 +106,9 @@ The development of a theme using these files and configuation would normally pro
 
 1. **Use Gulp commands to automate the development process.** Before you beging writing files, use the command `gulp build-dev` to start up the full task-running process. Gulp will watch for file changes, process Sass files into CSS, trigger Drush to clear cache when Drupal template files are changed, and refresh the browser.
 
-1. **Gulp will watch for changes in your files.** Not only will your Sass files automatically process into CSS, but any changes to your Pattern Lab patterns and Drupal theme template files will trigger appropriate changes as well. This includes reloading Browser Sync on each change so that the changes appear right away in your browser.
+1. **Gulp will watch for changes in your files.** Not only will your Sass files automatically process into CSS, but any changes to your Drupal theme template files will trigger appropriate changes as well. This includes reloading Browser Sync on each change so that the changes appear right away in your browser.
+ 
+1. **Put your custom js code** in `js-src/script.js`. Gulp will minify it for you.
 
 1. **Use `control-c` to stop Gulp watch tasks.** When you use the command `gulp build-dev` to start development, watch tasks will continue to run and Browser Sync will refresh your browser with each change. When you wish to stop these processes, use the keyboard command `control-c` (assuming you are developing on a Mac). This will stop all tasks and the site will no longer be accessisble from http://localhost:3000.
 
