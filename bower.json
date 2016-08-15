@@ -1,12 +1,12 @@
 {
-  "name": "aluport",
+  "name": "your_theme",
   "description": "A custom theme for Drupal 8 with development and performance features.",
   "main": "",
   "authors": [
     "Emanuel Righetto <posta@emanuelrighetto.it>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/erighetto/Aluport",
+  "homepage": "https://github.com/erighetto/d8t",
   "private": true,
   "ignore": [
     "**/.*",
